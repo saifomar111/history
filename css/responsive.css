@@ -1,0 +1,102 @@
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+
+        padding: 20px 0;
+
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .timeline {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        width: 95%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+
+        line-height: 1.5;
+    }
+
+    .hero-content > p:not(.subtitle) {
+        font-size: 16px;
+
+        line-height: 2;
+    }
+
+    .page-header {
+        padding: 70px 15px;
+    }
+
+    .page-header h1 {
+        font-size: 36px;
+
+        line-height: 1.5;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        margin: 70px auto;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .full-timeline {
+        padding-right: 20px;
+    }
+
+}

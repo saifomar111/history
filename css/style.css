@@ -1,1 +1,469 @@
+/* =========================
+   General
+========================= */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: speda, sans-serif;
+
+    background: #f4f1ea;
+
+    color: #222;
+
+    direction: rtl;
+}
+
+
+/* =========================
+   Navbar
+========================= */
+
+header {
+    width: 100%;
+
+    background: #171717;
+}
+
+.navbar {
+    width: 80%;
+    max-width: 1200px;
+
+    min-height: 75px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 28px;
+
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+
+    gap: 50px;
+}
+
+.nav-links a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+
+    display: inline-block;
+  
+}
+
+.nav-links a:hover {
+    color: #c89b5d;
+    transform: translatey( 2px );
+}
+
+
+/* =========================
+   Hero
+========================= */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+
+}
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+
+    background: url("../images/bg2.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(2px) brightness(0.8);
+
+
+    z-index: 0;
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.72);
+
+    z-index: 1;
+}
+
+.hero-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    color: white;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+.hero h1 {
+    max-width: 1000px;
+
+    font-size: 65px;
+
+    line-height: 1.4;
+
+    margin-bottom: 25px;
+}
+
+.hero-content p {
+    max-width: 800px;
+
+    font-size: 28px;
+
+    line-height: 2;
+
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    background: #94611a;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+     
+    width: 200PX;
+
+    text-align: center;
+
+    font-size: 23PX;
+}
+
+.hero-button:hover {
+    background: #a77d45;
+}
+
+
+/* =========================
+   Page Header
+========================= */
+
+.page-header {
+    background: #171717;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 100px 20px;
+}
+
+.page-header p {
+    color: #c89b5d;
+
+    margin-bottom: 15px;
+}
+
+.page-header h1 {
+    font-size: 50px;
+
+    margin-bottom: 20px;
+}
+
+.page-header span {
+    color: #ccc;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   Sections
+========================= */
+
+.section {
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 100px auto;
+}
+
+.section-title {
+    margin-bottom: 45px;
+}
+
+.section-title p {
+    color: #a77d45;
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+}
+
+
+/* =========================
+   Cards
+========================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    background: white;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card-image,
+.figure-image {
+    height: 220px;
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.mesopotamia {
+    background-image:
+        url("../images/civilization.jpg");
+}
+
+.egypt {
+    background-image:
+        url("../images/civilization.jpg");
+}
+
+.rome {
+    background-image:
+        url("../images/civilization.jpg");
+}
+
+.persia {
+    background-image:
+        url("../images/civilization.jpg");
+}
+
+.figure-image {
+    background-image:
+        url("../images/civilization.jpg");
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    font-size: 24px;
+
+    margin-bottom: 12px;
+}
+
+.card-content p {
+    color: #666;
+
+    line-height: 2;
+
+    margin-bottom: 20px;
+}
+
+.card-content a {
+    color: #a77d45;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   Timeline Preview
+========================= */
+
+.timeline-preview {
+    background: #171717;
+
+    color: white;
+
+    padding: 100px 5%;
+}
+
+.timeline {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.timeline-item {
+    padding: 30px;
+
+    border-right: 2px solid #c89b5d;
+}
+
+.timeline-item span {
+    color: #c89b5d;
+
+    font-size: 14px;
+}
+
+.timeline-item h3 {
+    margin-top: 15px;
+
+    font-size: 22px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   Full Timeline
+========================= */
+
+.full-timeline {
+    max-width: 900px;
+
+    margin: auto;
+
+    border-right: 3px solid #c89b5d;
+
+    padding-right: 40px;
+}
+
+.full-timeline .timeline-item {
+    border: none;
+
+    background: white;
+
+    margin-bottom: 35px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.full-timeline .timeline-item h2 {
+    margin: 15px 0;
+
+    line-height: 1.7;
+}
+
+.full-timeline .timeline-item p {
+    color: #666;
+
+    line-height: 2;
+}
+
+
+/* =========================
+   About
+========================= */
+
+.about-content {
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: 100px auto;
+}
+
+.about-content h2 {
+    font-size: 35px;
+
+    margin-bottom: 25px;
+}
+
+.about-content p {
+    color: #555;
+
+    font-size: 18px;
+
+    line-height: 2.2;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background: #101010;
+
+    color: #aaa;
+
+    text-align: center;
+
+    padding: 30px;
+}
